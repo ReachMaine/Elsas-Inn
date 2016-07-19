@@ -1,0 +1,29 @@
+/* Colors ---------------------------------------------- */
+// Font Colors
+$linkcolor: #3b7193;//#a62425;
+$titleFontColor: #3b7193;
+$facebook_blue: #3a589d;
+$reach_orange:  #f58220; 
+
+
+// Background colors: 
+$topbarcolor: #3b7193; // set in theme options.
+$bkgoundContent: #FFFFFF; // 
+$menuBarbkg: #D14719; //
+$testi-border: #c1cbd1;
+//$testi-bkgnd: #c1cbd1; 
+
+/* Typography ------------------------------------------ */
+
+
+ul, ol, dl {
+	list-style: inside;
+}
+/* ------------------ Reach stuff ---------------------*/
+/* used with reach branding, usually in copyright footer.
+<a class="reach-logo" href="https://www.reachmaine.com/">R<i style="color: #f58220">EA</i>CH Maine</a>
+*/
+.reach-logo:before {
+	content: url('images/reach-favicon.png');
+	padding-right: 3px;
+}

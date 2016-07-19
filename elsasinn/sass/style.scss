@@ -1,0 +1,142 @@
+/*
+Theme Name: Elsa's Inn
+Description: This is a child theme for Elsa's Inn
+Author: Reach Maine Marketing
+Author URI: http: //www.reachmaine.com/
+Template: flatsome
+Version: 2.5.6
+*/
+ 
+@import url("../flatsome/css/foundation.css");
+@import "partials/settings";
+
+ 
+/* =Theme customization starts here */
+html {
+	background-color: $topbarcolor;
+}
+#top-bar {
+	a.top-phone {
+		color: white;
+		font-weight: bold;
+		padding-left: 10px;
+	}
+}
+#masthead {
+	//height: 0px;
+	//display: none;
+
+}
+#top_right_text {
+	margin-top: -20px;
+}
+ul.header-nav a.nav-top-link {
+	//  main menu
+	text-transform: initial;
+	//color: $titleFontColor; - cant see it.
+	font-family: Georgia, Times, "Times New Roman", serif!important;
+	font-style: italic;
+	font-size: medium;
+}
+// content wrapper 
+.page-wrapper {
+	padding-top: 0px;
+}
+// sidebar stuff
+.elsas-logo { // logo is not ont he sidebar.
+	text-align: center;
+	//margin-top: -30px; 
+}
+.elsa-side-menu {
+	margin-bottom: 0px;
+	ul.menu {
+		margin-left: 0px;
+		padding-bottom: 0px;
+		li {
+			padding-bottom: 20px;
+			span.main {
+			    text-indent: 0px;
+			    font-size: 25px;
+			    //height: 30px;
+			    line-height: 28px;
+			    font-weight: bold;
+			    //text-transform: uppercase;
+			    text-transform: capitalize;
+			    text-align: center;
+			    display: block;
+			    color: $linkcolor;
+			}	
+			span.sub {
+			    display: block;
+			    padding-bottom: 0px;
+			    color: #878787;
+			    font-weight: normal;
+			    font-size: 14px;
+			    text-align: center;
+			    text-transform: capitalize;
+			}
+		}
+	}
+}
+// testimonials
+.easy_t_single_testimonial {
+	blockquote {
+		border: 1px solid $testi-border;
+		border-radius: 10px;
+		//background-color: $testi-bkgnd;
+	}
+
+	p.easy_testimonial_title {
+		margin-bottom: 0.5em;
+	}
+	.testimonial_body:before {
+		//content: '\201d';
+	}
+	.testimonial_body {
+		p {
+			margin-bottom: 0.5em;
+			font-size: smaller;
+		}
+	}
+
+	.testimonial_author{
+		display: none;
+	}
+}
+// content 
+.entry-content p {
+	font-size: large;
+}
+.type-page h1.entry-title {  // page titles
+	text-transform: initial;
+	color: $titleFontColor;
+	font-family: Georgia, Times, "Times New Roman", serif!important;
+	font-style: italic;
+	font-size: 30px;
+}
+//
+.elsas-room-title {
+	color: $titleFontColor;
+	font-family: Georgia, Times, "Times New Roman", serif!important;
+	font-style: italic;
+}
+.elsas-blue {
+	color: $titleFontColor;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+
+.from_the_blog_comments { // hide comments on blog shortcode 
+	display: none;
+	visibility: hidden;
+}
+aside.widget.widget_recent_entries { // give recent entries some breathing room
+	li {
+		padding-bottom: 15px;
+	}
+}
+/******* these should stay at bottom of this file **********/
+@import "partials/media"; 
+@import "partials/print";
