@@ -6,11 +6,11 @@ Author URI: http: //www.reachmaine.com/
 Template: flatsome
 Version: 2.5.6
 */
- 
+
 @import url("../flatsome/css/foundation.css");
 @import "partials/settings";
 
- 
+
 /* =Theme customization starts here */
 html {
 	background-color: $topbarcolor;
@@ -38,14 +38,14 @@ ul.header-nav a.nav-top-link {
 	font-style: italic;
 	font-size: medium;
 }
-// content wrapper 
+// content wrapper
 .page-wrapper {
 	padding-top: 0px;
 }
 // sidebar stuff
 .elsas-logo { // logo is not ont he sidebar.
 	text-align: center;
-	//margin-top: -30px; 
+	//margin-top: -30px;
 }
 .elsa-side-menu {
 	margin-bottom: 0px;
@@ -65,7 +65,7 @@ ul.header-nav a.nav-top-link {
 			    text-align: center;
 			    display: block;
 			    color: $linkcolor;
-			}	
+			}
 			span.sub {
 			    display: block;
 			    padding-bottom: 0px;
@@ -103,7 +103,7 @@ ul.header-nav a.nav-top-link {
 		display: none;
 	}
 }
-// content 
+// content
 .entry-content p {
 	font-size: large;
 }
@@ -126,9 +126,17 @@ ul.header-nav a.nav-top-link {
 	padding-right: 5px;
 }
 
+.elsas-room-rates ul {
+  list-style: none;
+}
+
+.row.container.elsas-room-rates {
+  margin-top: 15px;
+}
 
 
-.from_the_blog_comments { // hide comments on blog shortcode 
+
+.from_the_blog_comments { // hide comments on blog shortcode
 	display: none;
 	visibility: hidden;
 }
@@ -138,5 +146,5 @@ aside.widget.widget_recent_entries { // give recent entries some breathing room
 	}
 }
 /******* these should stay at bottom of this file **********/
-@import "partials/media"; 
+@import "partials/media";
 @import "partials/print";
