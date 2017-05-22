@@ -113,6 +113,9 @@ ul.header-nav a.nav-top-link {
 aside.widget.widget_recent_entries li {
   padding-bottom: 15px; }
 
+table tr th, table tr td {
+  padding: .5em; }
+
 /******* these should stay at bottom of this file **********/
 /* ===================================================== */
 /* Media Queries --------------------------------------- */

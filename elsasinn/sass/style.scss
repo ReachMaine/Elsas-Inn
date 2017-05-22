@@ -145,6 +145,10 @@ aside.widget.widget_recent_entries { // give recent entries some breathing room
 		padding-bottom: 15px;
 	}
 }
+
+table tr th, table tr td {
+	padding: .5em;
+}
 /******* these should stay at bottom of this file **********/
 @import "partials/media";
 @import "partials/print";
