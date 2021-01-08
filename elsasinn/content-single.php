@@ -7,7 +7,7 @@
 global $flatsome_opt;
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if($flatsome_opt['blog_post_style'] == 'default' || !isset($flatsome_opt['blog_post_style'])) { ?> 
+	<?php if($flatsome_opt['blog_post_style'] == 'default' || !isset($flatsome_opt['blog_post_style'])) { ?>
 	<header class="entry-header text-center">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<div class="tx-div small"></div>
@@ -15,9 +15,9 @@ global $flatsome_opt;
 			<?php flatsome_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
-	
 
-	<?php if ( has_post_thumbnail() && get_post_meta($post->ID, 'show_post_thumb', true)!='Disable')  ) { // check if the post has a Post Thumbnail assigned to it. ?>
+
+	<?php if ( has_post_thumbnail() && (get_post_meta($post->ID, 'show_post_thumb', true)!='Disable') )  { // check if the post has a Post Thumbnail assigned to it. ?>
     <div class="entry-image">
     		<?php if($flatsome_opt['blog_parallax']) { ?><div class="parallax_img" style="overflow:hidden"><div class="parallax_img_inner" data-velocity="0.15"><?php } ?>
             <?php the_post_thumbnail('large'); ?>
@@ -57,7 +57,7 @@ global $flatsome_opt;
 			/* translators: used between list items, there is a space after the comma */
 			$tag_list = get_the_tag_list( '', __( ', ', 'flatsome' ) );
 
-		
+
 			// But this blog has loads of categories so we should probably display them here
 			if ( '' != $tag_list ) {
 				$meta_text = __( 'This entry was posted in %1$s and tagged %2$s.', 'flatsome' );
@@ -81,17 +81,17 @@ global $flatsome_opt;
 			<div class="author-box">
 				<div class="row">
 					<div class="large-2 small-3 columns">
-						<?php 
+						<?php
 
 						$user = get_the_author_meta('ID');
-						echo get_avatar($user,90); 
+						echo get_avatar($user,90);
 
 						?>
-					
+
 					</div>
 					<div class="large-10 small-9 columns">
 					<h4 class="author-name"><?php _e('by','flatsome') ?> <?php echo get_the_author_meta('display_name');?></h4>
-					
+
 					<?php if(get_the_author_meta('yim')){?>
 					<p class="author-title"><?php echo get_the_author_meta('yim'); ?></p>
 					<?php }?>
@@ -105,6 +105,6 @@ global $flatsome_opt;
 				</div>
 			</div>
 		<?php } ?>
-		
+
 		<?php flatsome_content_nav( 'nav-below' ); ?>
 </article><!-- #post-## -->
